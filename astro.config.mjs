@@ -7,9 +7,6 @@ import netlify from "@astrojs/netlify/functions";
 export default defineConfig({
   site: 'https://astro-sandwich-shop-jpsanantonio.netlify.app',
   output: 'hybrid',
-  experimental: {
-    hybridOutput: true
-  },
   integrations: [react({
     include: ['src/components/add-to-cart.tsx']
   }), solid({
